@@ -21,12 +21,18 @@
     <ClCompile Include="Manager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\chemistry clash\Chemistry_Clash\Chemistry_Clash\Chemistry_Clash\Button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Manager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\chemistry clash\Chemistry_Clash\Chemistry_Clash\Chemistry_Clash\Macro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\chemistry clash\Chemistry_Clash\Chemistry_Clash\Chemistry_Clash\Button.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
