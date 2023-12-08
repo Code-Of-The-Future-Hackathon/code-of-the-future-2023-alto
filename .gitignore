@@ -3,6 +3,7 @@
 *.com
 *.class
 *.exe
+*.dll
 *.o
 *.so
 
@@ -18,6 +19,7 @@
 *.rar
 *.tar
 *.zip
+*.vs
 
 # Logs and databases #
 ######################
