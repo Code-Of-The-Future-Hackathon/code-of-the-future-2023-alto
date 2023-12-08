@@ -26,15 +26,15 @@ void Manager::Start()
 
 void Manager::Update()
 {
-    //BeginDrawing();
-    //GetFPS();
+    BeginDrawing();
+    GetFPS();
     //LoadNewScene();
     //SceneManager::GetInstance()->UpdateScene();
 
     //if (UIManager::GetInstance()->GetShouldFpsShow())
     //    DrawFPS(2, 0);
 
-    //EndDrawing();
+    EndDrawing();
 }
 
 bool Manager::ShouldWindowClose()
