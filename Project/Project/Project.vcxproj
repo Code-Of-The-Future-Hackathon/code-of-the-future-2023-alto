@@ -131,13 +131,28 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CheckButton.cpp" />
+    <ClCompile Include="Input.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="Question.cpp" />
+    <ClCompile Include="SceneChanger.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="Text.cpp" />
+    <ClCompile Include="UIManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Button.h" />
+    <ClInclude Include="CheckButton.h" />
+    <ClInclude Include="Input.h" />
     <ClInclude Include="Macro.h" />
     <ClInclude Include="Manager.h" />
+    <ClInclude Include="Question.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneChanger.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="Text.h" />
+    <ClInclude Include="UIManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
