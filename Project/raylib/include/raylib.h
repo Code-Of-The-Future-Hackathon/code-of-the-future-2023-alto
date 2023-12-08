@@ -167,7 +167,6 @@
 #define YELLOW     CLITERAL(Color){ 253, 249, 0, 255 }     // Yellow
 #define GOLD       CLITERAL(Color){ 255, 203, 0, 255 }     // Gold
 #define ORANGE     CLITERAL(Color){ 255, 161, 0, 255 }     // Orange
-#define PINK       CLITERAL(Color){ 255, 109, 194, 255 }   // Pink
 #define RED        CLITERAL(Color){ 230, 41, 55, 255 }     // Red
 #define MAROON     CLITERAL(Color){ 190, 33, 55, 255 }     // Maroon
 #define GREEN      CLITERAL(Color){ 0, 228, 48, 255 }      // Green
@@ -182,6 +181,13 @@
 #define BEIGE      CLITERAL(Color){ 211, 176, 131, 255 }   // Beige
 #define BROWN      CLITERAL(Color){ 127, 106, 79, 255 }    // Brown
 #define DARKBROWN  CLITERAL(Color){ 76, 63, 47, 255 }      // Dark Brown
+
+#define OFFWHITE   CLITERAL(Color){255, 245, 228}//OUR COLORS
+#define WHITEPINK  CLITERAL(Color){255, 227, 225}
+#define LIGHTPINK  CLITERAL(Color){255, 209, 209}
+#define PINK       CLITERAL(Color){255, 148, 148}
+
+
 
 #define WHITE      CLITERAL(Color){ 255, 255, 255, 255 }   // White
 #define BLACK      CLITERAL(Color){ 0, 0, 0, 255 }         // Black
