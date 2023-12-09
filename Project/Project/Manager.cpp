@@ -11,7 +11,7 @@ void Manager::Initialize()
 {
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE);
 
-    Image img = LoadImage("../assets/AlTo logo.png");
+    Image img = LoadImage("../assets/logo.png");
     SetWindowIcon(img);
     /*ToggleFullscreen();*/
     SetTargetFPS(60);

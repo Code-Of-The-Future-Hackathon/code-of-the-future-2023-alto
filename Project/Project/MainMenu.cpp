@@ -8,7 +8,7 @@ void MainMenu::LoadScene() { // Override for virtual LoadScene
 
 	UIManager->AddText(new Text({ "ALTO", 100, {200, 100}, BLACK }));
 
-	Image logoImg = LoadImage("../assets/AlTo logo.png");
+	Image logoImg = LoadImage("../assets/logo.png");
 	ImageResize(&logoImg, 500, 500);
 	Texture2D logoTx = LoadTextureFromImage(logoImg);
 	UIManager->AddTexture({ logoTx, {0,0, 500, 500}, {SCREEN_WIDTH - 600, SCREEN_HEIGHT - 600 } });

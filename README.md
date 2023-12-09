@@ -1,6 +1,6 @@
 <h1 align="center">Project AlTo</h1>
 <p align = "center">
-<img src = "Project/assets/AlTo logo.png" alt = "logo" align = "center" width = "300px" height = "300px">
+<img src = "Project/assets/logo.png" alt = "logo" align = "center" width = "300px" height = "300px">
 </p>
 <hr>
 <h2>📰About</h2>
