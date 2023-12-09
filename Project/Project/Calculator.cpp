@@ -39,8 +39,8 @@ void Calculator::LoadScene() {
 	UIManager->AddText(effText);
 	UIManager->AddInput(effInput);
 
-	std::shared_ptr<Button> calculate = std::make_shared<Button>(new Button ({ (SCREEN_WIDTH - 300) / 2, 550, 300, 80 }, "CALCULATE", 40, PINK, BLACK,
-		[]() {}));
+	std::shared_ptr<Button> calculate = std::make_shared<Button>(Rectangle{ (SCREEN_WIDTH - 300) / 2, 550, 300, 80 }, "CALCULATE", 40, PINK, BLACK,
+		[]() {});
 
 	calculate->SetLambda([patientsInput, areaInput, effInput, UIManager, calculate]() {
 		if (!(patientsInput->GetInputString().empty()

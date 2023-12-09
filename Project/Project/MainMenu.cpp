@@ -15,13 +15,13 @@ void MainMenu::LoadScene() { // Override for virtual LoadScene
 
 	float buttonX = 200.0f + (MeasureText("ALTO", 100) - 250) / 2;
 
-	UIManager->AddButton(std::make_shared<Button>(new Button{ {buttonX, 275, 250, 75}, "CALCULATOR", 30, LIGHTPINK, BLACK, []() {
+	UIManager->AddButton(std::make_shared<Button>(Rectangle {buttonX, 275, 250, 75}, "CALCULATOR", 30, LIGHTPINK, BLACK, []() {
 		SceneManager::GetInstance()->ChangeScene("Calculator");
-	} }));
+	} ));
 
-	UIManager->AddButton(std::make_shared<Button>(new Button{ {buttonX, 400, 250, 75}, "QUIT", 30, LIGHTPINK, BLACK, []() {
+	UIManager->AddButton(std::make_shared<Button>(Rectangle {buttonX, 400, 250, 75}, "QUIT", 30, LIGHTPINK, BLACK, []() {
 		Manager::GetInstance()->Close();
-} }));
+} ));
 
 	CheckButton* fullScreen = new CheckButton({ buttonX - 25,  550, 300, 75 }, "FULLSCREEN", 30, LIGHTPINK, WHITE, BLACK,
 		[UIManager]() {
