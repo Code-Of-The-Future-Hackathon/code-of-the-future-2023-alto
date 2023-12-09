@@ -3,6 +3,8 @@
 #include <cstdint>
 #include <raylib.h>
 #include <memory>
+#include "SceneManager.h"
+#include "SceneChanger.h"
 
 class Manager // Manager Singleton
 {

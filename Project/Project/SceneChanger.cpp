@@ -1,4 +1,4 @@
-#include "SceneChanger.h"
+#include "MainMenu.h"
 
 void LoadNewScene() {
     auto sceneManager = SceneManager::GetInstance();
@@ -7,8 +7,8 @@ void LoadNewScene() {
 
     std::string newScene = sceneManager->GetSceneString();
 
-    //if (newScene == "Main Menu")
-    //    sceneManager->SetScene(std::make_shared<MainMenu>()); // Changes current scene to Main Menu
+    if (newScene == "Main Menu")
+        sceneManager->SetScene(std::make_shared<MainMenu>()); // Changes current scene to Main Menu
 
     sceneManager->LoadScene();
 }

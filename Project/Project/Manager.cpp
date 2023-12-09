@@ -9,9 +9,9 @@ Manager::~Manager()
 
 void Manager::Initialize()
 {
-    InitWindow(1000, 1000, "SCREEN_TITLE");
+    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE);
 
-    Image img = LoadImage("../assets/Logo.png");
+    Image img = LoadImage("../assets/AlTo logo.png");
     SetWindowIcon(img);
     /*ToggleFullscreen();*/
     SetTargetFPS(60);
@@ -20,7 +20,7 @@ void Manager::Initialize()
 
 void Manager::Start()
 {
-    //SceneManager::GetInstance()->ChangeScene("Main Menu");
+    SceneManager::GetInstance()->ChangeScene("Main Menu");
     
 }
 
@@ -28,11 +28,11 @@ void Manager::Update()
 {
     BeginDrawing();
     GetFPS();
-    //LoadNewScene();
-    //SceneManager::GetInstance()->UpdateScene();
+    LoadNewScene();
+    SceneManager::GetInstance()->UpdateScene();
 
-    //if (UIManager::GetInstance()->GetShouldFpsShow())
-    //    DrawFPS(2, 0);
+    if (UIManager::GetInstance()->GetShouldFpsShow())
+        DrawFPS(2, 0);
 
     EndDrawing();
 }

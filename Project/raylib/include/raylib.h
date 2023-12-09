@@ -182,10 +182,10 @@
 #define BROWN      CLITERAL(Color){ 127, 106, 79, 255 }    // Brown
 #define DARKBROWN  CLITERAL(Color){ 76, 63, 47, 255 }      // Dark Brown
 
-#define OFFWHITE   CLITERAL(Color){255, 245, 228}//OUR COLORS
-#define WHITEPINK  CLITERAL(Color){255, 227, 225}
-#define LIGHTPINK  CLITERAL(Color){255, 209, 209}
-#define PINK       CLITERAL(Color){255, 148, 148}
+#define OFFWHITE   CLITERAL(Color){255, 245, 228, 255}//OUR COLORS
+#define WHITEPINK  CLITERAL(Color){255, 227, 225, 255}
+#define LIGHTPINK  CLITERAL(Color){255, 209, 209, 255}
+#define PINK       CLITERAL(Color){255, 148, 148, 255}
 
 
 
