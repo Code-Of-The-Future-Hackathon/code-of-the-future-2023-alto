@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Scene.h"
+#include "Hospital.h"
 
 class SceneManager { // SceneManager Singleton
 public:

@@ -1,12 +1,6 @@
 #include "Hospital.h"
 
-
-Hospital::Hospital(int patients, int area, float effectivity) :
-	patients(patients),
-	area(area),
-	effectivity(effectivity) {}
-
-Hospital::Hospital(){}
+std::shared_ptr<Hospital> Hospital::instance = nullptr;
 
 int Hospital::GetPatients() {
 	return patients;
@@ -16,4 +10,10 @@ int Hospital::GetArea() {
 }
 float Hospital::GetEffectivity() {
 	return effectivity;
+}
+
+void Hospital::Init(int patients, int area, float effectivity) {
+	this->patients = patients;
+	this->area = area;
+	this->effectivity = effectivity;
 }

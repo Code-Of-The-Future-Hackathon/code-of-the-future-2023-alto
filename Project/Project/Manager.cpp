@@ -9,12 +9,12 @@ Manager::~Manager()
 
 void Manager::Initialize()
 {
+    SetConfigFlags(FLAG_VSYNC_HINT);
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE);
 
     Image img = LoadImage("../assets/logo.png");
     SetWindowIcon(img);
     /*ToggleFullscreen();*/
-    SetTargetFPS(60);
     Start();
 }
 

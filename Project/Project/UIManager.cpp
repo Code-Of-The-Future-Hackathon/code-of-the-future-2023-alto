@@ -2,7 +2,7 @@
 
 std::shared_ptr<UIManager> UIManager::instance = nullptr;
 
-void UIManager::AddButton(Button button) {
+void UIManager::AddButton(std::shared_ptr<Button> button) {
 	this->buttonList.push_back(button);
 }
 
@@ -35,7 +35,7 @@ void UIManager::AddQuestion(Question* question) {
 
 void UIManager::UpdateAll() { // Updates all members of all lists 
 	for (auto button : buttonList) {
-		button.Update();
+		button->Update();
 	}
 	for (auto checkButton : checkButtonList) {
 		checkButton->Update();
@@ -55,8 +55,8 @@ void UIManager::DrawAll() { // Draws all members from all lists
 	for (const auto& texture : textureList) {
 		DrawTextureRec(texture.texture, texture.frameRec, texture.pos, WHITE);
 	}
-	for (Button button : buttonList) {
-		button.Draw();
+	for (auto button : buttonList) {
+		button->Draw();
 	}
 	for (CheckButton* checkButton : checkButtonList) {
 		checkButton->Draw();

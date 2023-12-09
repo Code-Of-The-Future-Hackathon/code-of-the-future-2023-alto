@@ -57,6 +57,12 @@
     <ClCompile Include="Treatment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Results.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Manager.h">
@@ -102,6 +108,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Treatment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Results.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

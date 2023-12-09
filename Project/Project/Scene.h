@@ -5,6 +5,7 @@
 #include <vector>
 
 #include "UIManager.h"
+#include "Hospital.h"
 
 class Scene { // Abstract class
 public:
@@ -12,9 +13,7 @@ public:
 
 	virtual void LoadText() = 0;
 
-	void ClearSceneBackground() {
-		ClearBackground(backgroundColor);
-	}
+	void ClearSceneBackground();
 
 protected:
 	Color backgroundColor;

@@ -52,3 +52,11 @@ bool Button::IsClicked() {
 void Button::ToggleClicking() {
 	this->canClick = !canClick;
 }
+
+void Button::SetLambda(std::function<void()> lambda) {
+	this->lambda = lambda;
+}
+
+void Button::SetText(std::string text) {
+	this->text = text;
+}

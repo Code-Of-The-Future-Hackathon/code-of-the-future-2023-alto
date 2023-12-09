@@ -139,6 +139,8 @@
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="Manager.cpp" />
     <ClCompile Include="Question.cpp" />
+    <ClCompile Include="Results.cpp" />
+    <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneChanger.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="Text.cpp" />
@@ -155,6 +157,7 @@
     <ClInclude Include="MainMenu.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="Question.h" />
+    <ClInclude Include="Results.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneChanger.h" />
     <ClInclude Include="SceneManager.h" />

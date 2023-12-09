@@ -33,7 +33,7 @@ public:
 
     void UpdateAll(); // Updates all elements
 
-    void AddButton(Button button);
+    void AddButton(std::shared_ptr<Button> button);
 
     void AddCheckButton(CheckButton* checkButton);
 
@@ -65,7 +65,7 @@ private:
 
     static std::shared_ptr<UIManager> instance;
 
-    std::vector<Button> buttonList;
+    std::vector<std::shared_ptr<Button>> buttonList;
 
     std::vector<CheckButton*> checkButtonList;
 

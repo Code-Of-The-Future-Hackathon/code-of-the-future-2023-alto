@@ -5,6 +5,7 @@
 #include <memory>
 #include "SceneManager.h"
 #include "SceneChanger.h"
+#include "Hospital.h"
 
 class Manager // Manager Singleton
 {

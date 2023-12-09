@@ -11,9 +11,9 @@ void Calculator::LoadScene() {
 	//UIManager->AddRec({floorRec, LIGHTPINK});
 	//UIManager->AddRec({ borderRec, PINK });
 
-	Rectangle hospitalInfo = {25, 25, SCREEN_WIDTH - 50, SCREEN_HEIGHT - 50};
+	Rectangle frame = {25, 25, SCREEN_WIDTH - 50, SCREEN_HEIGHT - 50};
 
-	UIManager->AddRec({ hospitalInfo, OFFWHITE });
+	UIManager->AddRec({ frame, OFFWHITE });
 
 	int measure = MeasureText("INPUT DATA", 60);
 	Text* text = new Text("INPUT DATA", 60, { (SCREEN_WIDTH - (float)measure)/2, 100 }, BLACK);
@@ -39,11 +39,30 @@ void Calculator::LoadScene() {
 	UIManager->AddText(effText);
 	UIManager->AddInput(effInput);
 
-	Button calculate({ (SCREEN_WIDTH - 300) / 2, 550, 300, 80 }, "CALCULATE", 40, PINK, BLACK,
-		[patientsInput, areaInput, effInput]() {
-			std::cout << patientsInput->GetInputString();
-		});
+	std::shared_ptr<Button> calculate = std::make_shared<Button>(new Button ({ (SCREEN_WIDTH - 300) / 2, 550, 300, 80 }, "CALCULATE", 40, PINK, BLACK,
+		[]() {}));
+
+	calculate->SetLambda([patientsInput, areaInput, effInput, UIManager, calculate]() {
+		if (!(patientsInput->GetInputString().empty()
+			|| areaInput->GetInputString().empty()
+			|| effInput->GetInputString().empty()
+			))
+		{
+			Hospital::GetInstance()->Init(
+				std::stoi(patientsInput->GetInputString()),
+				std::stoi(areaInput->GetInputString()),
+				(float)std::stoi(effInput->GetInputString())
+			);
+
+			SceneManager::GetInstance()->ChangeScene("Results");
+		}
+		else
+		{
+			calculate->SetText("INPUT ALL");
+		}
+	});
 	UIManager->AddButton(calculate);
+
 }
 
 void Calculator::LoadText() {}

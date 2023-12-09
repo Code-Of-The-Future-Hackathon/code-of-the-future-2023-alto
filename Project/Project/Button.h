@@ -6,6 +6,7 @@
 #include <vector>
 #include <map>
 #include <functional>
+#include <memory>
 
 
 class Button {
@@ -24,6 +25,9 @@ public:
 
 	void ToggleClicking(); // Toggles permission to click on button
 
+	void SetLambda(std::function<void()> lambda);
+
+	void SetText(std::string text);
 private:
 
 	bool canClick = 1; // Permission to click on button
