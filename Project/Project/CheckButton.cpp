@@ -33,7 +33,7 @@ void CheckButton::Draw() {
 	}
 	else {
 
-		DrawRectangleRec(checkBoxBody, GRAY);
+		DrawRectangleRec(checkBoxBody, PINK);
 
 	}
 
@@ -43,8 +43,8 @@ void CheckButton::Draw() {
 }
 
 void CheckButton::DrawBorder() { // Draws check button border
-	int offset = 5;
-	int thickness = 5;
+	int offset = 4;
+	int thickness = 4;
 	Rectangle border = mainBody;
 	border.width += offset;
 	border.height += offset;
