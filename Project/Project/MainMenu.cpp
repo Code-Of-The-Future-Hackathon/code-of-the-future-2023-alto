@@ -16,7 +16,7 @@ void MainMenu::LoadScene() { // Override for virtual LoadScene
 	float buttonX = 200.0f + (MeasureText("ALTO", 100) - 200) / 2;
 
 	UIManager->AddButton({ {buttonX, 275, 200, 75}, "PLAY", 30, LIGHTPINK, BLACK, []() {
-		SceneManager::GetInstance()->ChangeScene("Play");
+		SceneManager::GetInstance()->ChangeScene("Game");
 	} });
 
 	UIManager->AddButton({ {buttonX, 400, 200, 75}, "QUIT", 30, LIGHTPINK, BLACK, []() {
