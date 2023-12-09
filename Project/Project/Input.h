@@ -32,6 +32,8 @@ public:
 
 	std::string GetInputString();
 
+	void SetInputString(std::string str);
+
 private:
 	bool canInput = 1; // Permission to input
 

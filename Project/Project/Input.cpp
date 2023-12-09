@@ -83,6 +83,10 @@ std::string Input::GetInputString() {
 	return inputString;
 }
 
+void Input::SetInputString(std::string str) {
+	inputString = str;
+}
+
 void Input::CallLambda() {
 	lambda();
 }

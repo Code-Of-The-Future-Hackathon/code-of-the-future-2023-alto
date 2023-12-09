@@ -18,3 +18,7 @@ int Text::GetTextSize() { // Gets text font size
 void Text::SetText(std::string newText) { // Changes the text to a new text
 	this->text = newText;
 }
+
+std::string Text::GetText() {
+	return text;
+}

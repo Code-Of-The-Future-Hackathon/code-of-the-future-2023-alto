@@ -17,6 +17,8 @@ public:
 
 	int GetTextSize();
 
+	std::string GetText();
+
 	void SetText(std::string newText);
 
 

@@ -8,16 +8,10 @@
 class Hospital {
 public:
 
-	int GetPeopleSaved();
-	double GetPowerSaved();
-	double MoneySaved();
+	int GetPatients();
 
-	void SetPeopleSaved(int value);
-	void SetPowerSaved(double value);
-	void SetMoneySaved(double value);
 
 private:
-	int peopleSaved = 0;
-	double powerSaved = 0;
-	double moneySaved = 0;
+	int patients;
+
 };

@@ -1,5 +1,5 @@
 #include "MainMenu.h"
-#include "Game.h"
+#include "Demo.h"
 
 void LoadNewScene() {
     auto sceneManager = SceneManager::GetInstance();
@@ -10,8 +10,8 @@ void LoadNewScene() {
 
     if (newScene == "Main Menu")
         sceneManager->SetScene(std::make_shared<MainMenu>()); // Changes current scene to Main Menu
-    if (newScene == "Game")
-        sceneManager->SetScene(std::make_shared<Game>()); // Changes current scene to Game
+    if (newScene == "Demo")
+        sceneManager->SetScene(std::make_shared<Demo>()); // Changes current scene to Game
 
     sceneManager->LoadScene();
 }
