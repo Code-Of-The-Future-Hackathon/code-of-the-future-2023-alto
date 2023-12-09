@@ -8,10 +8,16 @@
 class Hospital {
 public:
 
-	int GetPatients();
+	Hospital(int patients, int area, float effectivity);
+	Hospital();
 
+	int GetPatients();
+	int GetArea();
+	float GetEffectivity();
 
 private:
 	int patients;
+	int area;
+	float effectivity;
 
 };

@@ -132,7 +132,7 @@
   <ItemGroup>
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="CheckButton.cpp" />
-    <ClCompile Include="Demo.cpp" />
+    <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="Hospital.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="main.cpp" />
@@ -142,12 +142,13 @@
     <ClCompile Include="SceneChanger.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="Text.cpp" />
+    <ClCompile Include="Treatment.cpp" />
     <ClCompile Include="UIManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Button.h" />
     <ClInclude Include="CheckButton.h" />
-    <ClInclude Include="Demo.h" />
+    <ClInclude Include="Calculator.h" />
     <ClInclude Include="Hospital.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Macro.h" />
@@ -158,6 +159,7 @@
     <ClInclude Include="SceneChanger.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="Text.h" />
+    <ClInclude Include="Treatment.h" />
     <ClInclude Include="UIManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

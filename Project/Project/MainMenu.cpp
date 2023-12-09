@@ -13,17 +13,17 @@ void MainMenu::LoadScene() { // Override for virtual LoadScene
 	Texture2D logoTx = LoadTextureFromImage(logoImg);
 	UIManager->AddTexture({ logoTx, {0,0, 500, 500}, {SCREEN_WIDTH - 600, SCREEN_HEIGHT - 600 } });
 
-	float buttonX = 200.0f + (MeasureText("ALTO", 100) - 200) / 2;
+	float buttonX = 200.0f + (MeasureText("ALTO", 100) - 250) / 2;
 
-	UIManager->AddButton({ {buttonX, 275, 200, 75}, "DEMO", 30, LIGHTPINK, BLACK, []() {
-		SceneManager::GetInstance()->ChangeScene("Demo");
+	UIManager->AddButton({ {buttonX, 275, 250, 75}, "CALCULATOR", 30, LIGHTPINK, BLACK, []() {
+		SceneManager::GetInstance()->ChangeScene("Calculator");
 	} });
 
-	UIManager->AddButton({ {buttonX, 400, 200, 75}, "QUIT", 30, LIGHTPINK, BLACK, []() {
+	UIManager->AddButton({ {buttonX, 400, 250, 75}, "QUIT", 30, LIGHTPINK, BLACK, []() {
 		Manager::GetInstance()->Close();
 } });
 
-	CheckButton* fullScreen = new CheckButton({ buttonX - 50,  550, 300, 75 }, "FULLSCREEN", 30, LIGHTPINK, WHITE, BLACK,
+	CheckButton* fullScreen = new CheckButton({ buttonX - 25,  550, 300, 75 }, "FULLSCREEN", 30, LIGHTPINK, WHITE, BLACK,
 		[UIManager]() {
 			UIManager->ToggleFullScreen();
 		}, UIManager->GetShouldFullscreen(), 1);
