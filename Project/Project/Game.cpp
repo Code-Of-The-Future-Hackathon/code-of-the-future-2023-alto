@@ -14,6 +14,7 @@ void Game::LoadScene() {
 	Rectangle hospitalInfo = {25, 25, 350, SCREEN_HEIGHT - 50};
 
 	UIManager->AddRec({ hospitalInfo, OFFWHITE });
+
 }
 
 void Game::LoadText() {}
