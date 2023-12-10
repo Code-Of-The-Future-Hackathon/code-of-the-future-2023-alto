@@ -57,7 +57,10 @@ void Results::LoadScene() { // Override for virtual LoadScene
 		Text* compareText2 = new Text(compareString2, 40, { (float)(SCREEN_WIDTH - MeasureText(compareString2.c_str(), 40)) / 2, 390 }, BLACK);
 		UIManager->AddText(compareText2);
 	}
-
+	float buttonX = (float)(SCREEN_WIDTH - 300) / 2; 
+	UIManager->AddButton(std::make_shared<Button>(Rectangle{ buttonX, SCREEN_HEIGHT - 200, 300, 75 }, "MAIN MENU", 30, PINK, BLACK, []() {
+		SceneManager::GetInstance()->ChangeScene("Main Menu");
+		}));
 
 	//Text* temp = new Text(std::to_string(Hospital->GetPatients()), 40, {10, 10}, BLACK);
 	//UIManager->AddText(temp);

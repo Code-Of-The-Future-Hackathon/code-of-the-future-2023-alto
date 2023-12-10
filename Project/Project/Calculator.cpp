@@ -63,6 +63,11 @@ void Calculator::LoadScene() {
 	});
 	UIManager->AddButton(calculate);
 
+	UIManager->AddButton(std::make_shared<Button>(Rectangle{ 25, 25, 60, 60 }, "<", 30, PINK, BLACK, []() {
+		SceneManager::GetInstance()->ChangeScene("Main Menu");
+		}));
+
+
 }
 
 void Calculator::LoadText() {}
