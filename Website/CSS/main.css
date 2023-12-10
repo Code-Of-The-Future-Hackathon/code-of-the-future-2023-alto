@@ -1,3 +1,8 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+ 
+ 
  .btn btn-secondary{
     justify-content: right;
     align-items: right;
@@ -13,3 +18,4 @@
 .nav .logo {
     height: 3rem;
 }
+
