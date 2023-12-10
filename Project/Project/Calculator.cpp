@@ -15,8 +15,8 @@ void Calculator::LoadScene() {
 
 	UIManager->AddRec({ frame, OFFWHITE });
 
-	int measure = MeasureText("INPUT DATA", 60);
-	Text* text = new Text("INPUT DATA", 60, { (SCREEN_WIDTH - (float)measure)/2, 100 }, BLACK);
+	int measure = MeasureText("INPUT DATA (MONTHLY)", 70);
+	Text* text = new Text("INPUT DATA (MONTHLY)", 70, { (SCREEN_WIDTH - (float)measure)/2, 70 }, BLACK);
 	UIManager->AddText(text);
 	
 	Text* patientsText = new Text("NUMBER OF PATIENTS:", 40, { 300, 200 }, BLACK);
@@ -62,6 +62,11 @@ void Calculator::LoadScene() {
 		}
 	});
 	UIManager->AddButton(calculate);
+
+	UIManager->AddButton(std::make_shared<Button>(Rectangle{ 25, 25, 60, 60 }, "<", 30, PINK, BLACK, []() {
+		SceneManager::GetInstance()->ChangeScene("Main Menu");
+		}));
+
 
 }
 
