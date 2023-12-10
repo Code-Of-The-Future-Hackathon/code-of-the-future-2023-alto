@@ -15,18 +15,7 @@
 <p align = "center">
 <img src = "Project/assets/Screenshots/Main menu.png" alt = "main menu png" width = 600px>
 <img src = "Project/assets/Screenshots/Input data.png" alt = "input data png" width = 600px>
-<img src = "Project/assets/Screenshots/Website.png" alt = "website png" width = 600px>
 </p>
-<hr>
-<h2>📃Documents</h2>
-<h3>Documentation</h3>
-<ul>
-<li><a href="" download>Documentation</a></li>
-</ul>
-<h3>Presentation</h3>
-<ul>
-<li><a href="" download>Presentation</a></li>
-</ul>
 <hr>
 <h2>🧑‍💻Technologies</h2>
 <h3> Code editors and collaborative services used:</h3>
@@ -46,10 +35,8 @@
 </p>
 <h3>Softwares used for visual elements:</h3>
     <a href = "https://www.adobe.com/products/illustrator.html"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1200px-Adobe_Illustrator_CC_icon.svg.png" alt = "Adobe Illustrator logo" width = 50px /></a>
-<h3>Used programs for creating documentation and presentation:</h3>
+<h3>Used program for creating the presentation:</h3>
 <p align="left">
-  <a href="https://www.microsoft.com/en-ww/microsoft-365/word"><img src="https://img.icons8.com/color/344/ms-word.png" alt="MS Word logo" width=48px /></a>
-  <a href="https://www.microsoft.com/bg-bg/microsoft-365/excel"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/826px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt = "MS Excel logo" width = 48px /></a>
    <a href="https://www.microsoft.com/en-ww/microsoft-365/powerpoint"><img src="https://img.icons8.com/color/344/ms-powerpoint.png" alt="MS PowerPoint logo" width=48px /></a>
 </p>
 <hr>
