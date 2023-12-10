@@ -15,6 +15,7 @@
 <p align = "center">
 <img src = "Project/assets/Screenshots/Main menu.png" alt = "main menu png" width = 600px>
 <img src = "Project/assets/Screenshots/Input data.png" alt = "input data png" width = 600px>
+<img src = "Project/assets/Screenshots/Website.png" alt = "website png" width = 600px>
 </p>
 <hr>
 <h2>🧑‍💻Technologies</h2>
